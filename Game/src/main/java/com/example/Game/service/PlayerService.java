@@ -19,7 +19,7 @@ public class PlayerService {
 
     public Player getPlayerById(int playerId) {
         return playerRepository.findById(playerId)
-                .orElseThrow(() -> new RuntimeException("Player wih id=" + String.valueOf(playerId) + " not found"));
+                .orElseThrow(() -> new RuntimeException("Player wih id=" + playerId + " not found"));
 
     }
 }
